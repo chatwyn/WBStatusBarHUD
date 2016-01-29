@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = 'WBStatusBarHUD'
-    s.version      = '0.0.1'
+    s.version      = '0.0.2'
     s.summary      = 'An easy statusBar indicator'
     s.homepage     = 'https://github.com/chatwyn/WBStatusBarHUD'
     s.license      = 'MIT'
