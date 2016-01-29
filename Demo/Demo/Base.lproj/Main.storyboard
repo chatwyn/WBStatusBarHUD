@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iex-eG-fGQ">
+                                <rect key="frame" x="285" y="107" width="30" height="30"/>
+                                <state key="normal" title="成功"/>
+                                <connections>
+                                    <action selector="success:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGv-o5-QuK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPb-Pe-af1">
+                                <rect key="frame" x="285" y="162" width="30" height="30"/>
+                                <state key="normal" title="失败"/>
+                                <connections>
+                                    <action selector="fail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qMr-1M-I6U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRm-ho-uUz">
+                                <rect key="frame" x="285" y="226" width="30" height="30"/>
+                                <state key="normal" title="加载"/>
+                                <connections>
+                                    <action selector="loading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6YA-GJ-36p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ip-Kf-QkH">
+                                <rect key="frame" x="285" y="285" width="30" height="30"/>
+                                <state key="normal" title="隐藏"/>
+                                <connections>
+                                    <action selector="hide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vnc-61-icF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8C-My-3pg">
+                                <rect key="frame" x="278" y="346" width="45" height="30"/>
+                                <state key="normal" title="自定义"/>
+                                <connections>
+                                    <action selector="test:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RNm-LC-JgL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fPb-Pe-af1" firstAttribute="top" secondItem="iex-eG-fGQ" secondAttribute="bottom" constant="25" id="Dkg-0A-Ijl"/>
+                            <constraint firstItem="o8C-My-3pg" firstAttribute="centerX" secondItem="8ip-Kf-QkH" secondAttribute="centerX" id="Pub-uq-nZa"/>
+                            <constraint firstItem="8ip-Kf-QkH" firstAttribute="centerX" secondItem="QRm-ho-uUz" secondAttribute="centerX" id="SfF-dY-DLc"/>
+                            <constraint firstItem="8ip-Kf-QkH" firstAttribute="top" secondItem="QRm-ho-uUz" secondAttribute="bottom" constant="29" id="T0g-a8-kIJ"/>
+                            <constraint firstItem="fPb-Pe-af1" firstAttribute="centerX" secondItem="iex-eG-fGQ" secondAttribute="centerX" id="dTz-bF-cxY"/>
+                            <constraint firstItem="iex-eG-fGQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hj9-SF-lxu"/>
+                            <constraint firstItem="QRm-ho-uUz" firstAttribute="top" secondItem="fPb-Pe-af1" secondAttribute="bottom" constant="34" id="i39-JV-x94"/>
+                            <constraint firstItem="iex-eG-fGQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="87" id="nlG-te-caV"/>
+                            <constraint firstItem="o8C-My-3pg" firstAttribute="top" secondItem="8ip-Kf-QkH" secondAttribute="bottom" constant="31" id="oZO-mz-nKv"/>
+                            <constraint firstItem="QRm-ho-uUz" firstAttribute="centerX" secondItem="fPb-Pe-af1" secondAttribute="centerX" id="vgS-W2-DGp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
