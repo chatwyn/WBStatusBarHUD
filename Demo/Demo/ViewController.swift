@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        WBStatusBarHUD.setWindow(UIColor.cyanColor())
+    }
 
     @IBAction func success(sender: AnyObject) {
 
